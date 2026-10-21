@@ -1,0 +1,10 @@
+.venv/
+.env
+__pychache__/
+*.py[cod]
+.pytest_cache/
+logs/*
+!logs/.gitkeep
+data/private/
+*.egg-info/
+*:Zone.Identifier
