@@ -1,0 +1,19 @@
+1.
+A: greedy; B: temp 0.3, top_p 1; C: temp 0.8, top_p 0.9; D: temp 1.2, top_p 0.9
+każdy 5 razy
+
+2.
+im wyższa temperatura, tym większa różnorodność
+A (greedy): 1 unikalna odpowiedź, śr. 160 tokenów.
+B (temp 0.3): 5 unikalnych odpowiedzi, śr. 153 tokeny.
+C (temp 0.8): 5 unikalnych odpowiedzi, śr. 121.8 tokenów.
+D (temp 1.2): 5 unikalnych odpowiedzi, śr. 148.4 tokenów.
+
+3.
+najwyższa temperatura - 1.2: wynik znacznie gorszy, model używał losowych słów i znaków
+kawałek wypowiedzi modelu: "WIATKO Argumentacja jeちゃstrasfa dziar nodeenity to.ndarray ape ši '@/zapowszeniem:]apeloponiow"
+
+4.
+logit - liczbowa ocena modelu dla każdego słowa 
+prawdopodobieństwo - logity po softmaxie, zamienione na dodatnie procenty
+wybrany token - fragment słowa wylosowany i dodany do zdania na podstawie prawdopodobieństwa
